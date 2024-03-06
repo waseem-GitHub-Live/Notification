@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
@@ -10,6 +11,7 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="192dp"
+
         android:fitsSystemWindows="true"
         android:theme="@style/ToolbarWhite">
 
@@ -18,7 +20,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:contentScrim="@color/colorPrimary"
             app:expandedTitleMarginBottom="32dp"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
@@ -27,7 +28,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary"
+
                 android:contentDescription="@string/app_name"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
@@ -51,11 +52,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:backgroundTint="@color/colorPrimaryDark"
+
         app:elevation="8dp"
+        android:src="@drawable/ic_done_white_24dp"
         app:layout_anchor="@id/appBarLayout"
-        app:layout_anchorGravity="bottom|right"
-        app:srcCompat="@drawable/ic_done_white_24dp" />
+        app:layout_anchorGravity="bottom|right" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
